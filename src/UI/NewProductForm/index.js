@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import API from "@aws-amplify/api";
 
-import amplifyApi from "../../amplify-api";
 import { productPropType } from "../../utils/prop-types";
 import { createProduct } from "../../graphql/mutations";
 
@@ -46,7 +46,7 @@ const NewProductForm = (props) => {
         imageUrl,
         description,
       };
-      const response = await amplifyApi.graphql({
+      const response = await API.graphql({
         query: createProduct,
         variables: {
           input: newProduct,

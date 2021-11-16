@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import amplifyApi from "./amplify-api";
+import API from "@aws-amplify/api"
 import { listProducts } from "./graphql/queries";
 import NewProductForm from "./UI/NewProductForm";
 import ProductGrid from "./UI/ProductGrid";
@@ -12,7 +12,8 @@ const App = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await amplifyApi.graphql({
+        console.log(API)
+        const response = await API.graphql({
           query: listProducts,
         });
         setProducts(response?.data?.listProducts?.items ?? []);
