@@ -1,0 +1,8 @@
+type Product @model {
+  id: ID!
+  name: String!
+  brand: String!
+  price: Float!
+  imageUrl: String
+  description: String
+}

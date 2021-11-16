@@ -1,0 +1,33 @@
+.new-product-form {
+  @apply flex flex-col max-w-screen-sm p-4;
+  @apply border;
+
+  label {
+    @apply block mb-2;
+
+    > span {
+      @apply block;
+    }
+
+    > input, textarea {
+      @apply w-full p-1;
+      @apply border;
+    }
+
+    &:last-of-type {
+      @apply mb-4;
+    }
+
+    &.required {
+      > span:after {
+        content: " *";
+        @apply text-red-600;
+      }
+    }
+  }
+
+  button[type="submit"] {
+    @apply p-4;
+    @apply bg-black text-white;
+  }
+}

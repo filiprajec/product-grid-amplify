@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-productgrid-dev-144900-authRole",
+      "UnauthRoleArn": "arn:aws:iam::980253852679:role/amplify-productgrid-dev-144900-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::980253852679:role/amplify-productgrid-dev-144900-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-productgrid-dev-144900-deployment",
+      "UnauthRoleName": "amplify-productgrid-dev-144900-unauthRole",
+      "StackName": "amplify-productgrid-dev-144900",
+      "StackId": "arn:aws:cloudformation:us-west-1:980253852679:stack/amplify-productgrid-dev-144900/25d47bc0-4690-11ec-8aa5-061408008b39",
+      "AmplifyAppId": "d27uqh44otw4et"
+    },
+    "categories": {
+      "auth": {
+        "productgridd561e7da": {},
+        "true": {}
+      }
+    }
+  }
+}
