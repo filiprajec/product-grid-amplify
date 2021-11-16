@@ -12,7 +12,6 @@ const App = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        console.log(API)
         const response = await API.graphql({
           query: listProducts,
         });
